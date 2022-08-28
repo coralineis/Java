@@ -7,9 +7,10 @@ public class Example5 {
 		for (int a = 1; a <= 10; a++) {
 			if (a % 2 == 0) {
 				count ++;
-
+				sum += a;
 			}
 		}
 		System.out.println(count);
+		System.out.println(sum);
 	}
 }
