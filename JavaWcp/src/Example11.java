@@ -12,5 +12,25 @@ public class Example11 {
 				System.out.print(",");
 			}
 		}
+
+		System.out.println();
+		for (int i = 0; i < (array.length - 10); i++) {
+			if (i % 2 != 0) {
+				System.out.print(array[i]);
+				if (i < array.length - 11) {
+					System.out.print(",");
+				}
+			}
+		}
+
+		System.out.println();
+		for (int i = 0; i > (array.length - 9) && i < array.length; i++) {
+			if (i % 2 == 0) {
+				System.out.print(array[i]);
+				if (i < array.length) {
+					System.out.print(",");
+				}
+			}
+		}
 	}
 }
