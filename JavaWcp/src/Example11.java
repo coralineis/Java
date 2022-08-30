@@ -15,7 +15,7 @@ public class Example11 {
 
 		System.out.println();
 		for (int i = 0; i < (array.length - 10); i++) {
-			if (i % 2 != 0) {
+			if (array[i] % 2 != 0) {
 				System.out.print(array[i]);
 				if (i < array.length - 11) {
 					System.out.print(",");
@@ -24,10 +24,10 @@ public class Example11 {
 		}
 
 		System.out.println();
-		for (int i = 0; i > (array.length - 9) && i < array.length; i++) {
-			if (i % 2 == 0) {
+		for (int i = 11; i > array.length - 11 && i < array.length; i++) {
+			if (array[i] % 2 == 0) {
 				System.out.print(array[i]);
-				if (i < array.length) {
+				if (i < array.length - 2) {
 					System.out.print(",");
 				}
 			}
