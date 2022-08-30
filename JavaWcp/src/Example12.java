@@ -20,5 +20,13 @@ public class Example12 {
 		}
 		System.out.println("1~10までに偶数は" + count + "コ");
 		System.out.println("1~10までの偶数の合計は" + sum);
+
+		System.out.println("3問目");
+		for (int i = 1; i < 11; i++) {
+			System.out.print(i);
+			if (i < 10) {
+				System.out.print(",");
+			}
+		}
 	}
 }
