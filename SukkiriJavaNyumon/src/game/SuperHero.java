@@ -16,4 +16,11 @@ public class SuperHero extends Hero{
 	public void run() {
 		System.out.println(this.name + "は撤退した");
 	}
+
+	public void attack(Matango m) {
+		super.attack(m);
+		if (this.flying) {
+			super.attack(m);
+		}
+	}
 }
