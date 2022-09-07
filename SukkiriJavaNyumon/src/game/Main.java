@@ -7,5 +7,8 @@ public class Main {
 
 		SuperHero sh = new SuperHero();
 		sh.run();
+
+		PoisonMatango pm = new PoisonMatango('A');
+		pm.attack(sh);
 	}
 }
