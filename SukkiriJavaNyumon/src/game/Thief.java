@@ -1,9 +1,13 @@
 package game;
 
-public class Thief {
+public class Thief extends Character{
 	String name;
 	int hp;
 	int mp;
+
+	public Thief() {
+
+	}
 
 	public Thief(String name, int hp, int mp) {
 		this.name = name;
@@ -17,5 +21,9 @@ public class Thief {
 
 	public Thief(String name) {
 		this(name, 40);
+	}
+
+	public void attack(Matango m) {
+
 	}
 }
