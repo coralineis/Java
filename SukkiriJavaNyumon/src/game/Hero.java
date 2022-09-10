@@ -1,8 +1,8 @@
 package game;
 
 public class Hero extends Character{
-	String name = "ミナト";
-	int hp = 100;
+	String name;
+	private int hp;
 	Sword sword;
 
 	public void bye() {
