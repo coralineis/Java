@@ -2,9 +2,9 @@ package Chap14;
 
 public class Main {
 	public static void main(String[] args) {
-		Hero h = new Hero();
-		h.name = "ミナト";
-		h.hp = 100;
-		System.out.println(h.toString());
+		Hero.setRandomMoney();
+		System.out.println(Hero.money);
+		Hero h1 = new Hero();
+		System.out.println(h1.money);
 	}
 }
