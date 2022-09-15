@@ -2,18 +2,15 @@ package Chap15;
 
 public class Main {
 	public static void main(String[] args) {
-		String s1 = "スッキリJava";
-		String s2 = "Java";
-		String s3 = "java";
-		if (s2.equals(s3)) {
-			System.out.println("s2とs3は等しい");
+		String s1 = "Java and JavaScript";
+		if (s1.contains("Java")) {
+			System.out.println("文字列s1は、Javaを含んでいます");
 		}
-		if (s2.equalsIgnoreCase(s3)) {
-			System.out.println("s2とs3はケースを区別しなければ等しい");
+		if (s1.endsWith("Java")) {
+			System.out.println("文字列s1は、Java末尾にあります");
 		}
-		System.out.println("s1の長さは" + s1.length() + "です");
-		if (s1.isEmpty()) {
-			System.out.println("s1は空文字です");
-		}
+		System.out.println("文字列s1で最初にJavaが登場する位置は" + s1.indexOf("Java"));
+
+		System.out.println("文字列s1で最後にJavaが登場する位置は" + s1.lastIndexOf("Java"));
 	}
 }
