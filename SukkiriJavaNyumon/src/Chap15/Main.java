@@ -1,16 +1,16 @@
 package Chap15;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		SimpleDateFormat f =
+				new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Date d = f.parse("2022/09/22 01:23:45");
+		System.out.println(d);
 		Date now = new Date();
-		System.out.println(now);
-		System.out.println(now.getTime());
-		Date past = new Date(1600705425827L);
-		System.out.println(past);
-		long start = System.currentTimeMillis();
-		long end = System.currentTimeMillis();
-		System.out.println("処理にかかった時間は…" + (end - start) + "ミリ秒でした");
+		String s = f.format(now);
+		System.out.println("現在は" + s + "です");
 	}
 }
