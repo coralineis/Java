@@ -1,6 +1,6 @@
 package Chap16;
 
-import java.util.Hashset;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
@@ -11,6 +11,5 @@ public class Main {
 		colors.add("黄");
 		colors.add("赤");
 		System.out.println("色は" + colors.size() + "種類");
-		}
 	}
 }
