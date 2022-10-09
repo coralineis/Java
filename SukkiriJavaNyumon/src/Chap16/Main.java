@@ -1,18 +1,18 @@
 package Chap16;
 
 import java.util.*;
-
-class Hero {
-	public String name;
+import Chap16.Hero;
 
 public class Main {
 	public static void main(String[] args) {
-			Hero h = new Hero();
-			h.name = "ミナト";
-			List<Hero> list = new ArrayList<Hero>();
-			list.add(h);
-			h.name = "スガワラ";
-			System.out.println(list.get(0).name);
+		Hero h1 = new Hero("斎藤");
+		Hero h2 = new Hero("鈴木");
+		Map<Hero, Integer> heros = new HashMap<Hero, Integer>();
+		heros.put(h1, 3);
+		heros.put(h2, 7);
+		for (Hero key : heros.keySet()) {
+			int value = heros.get(key);
+			System.out.println(key.getName() + "が倒した敵＝" + value);
 		}
 	}
 }
